@@ -16,10 +16,7 @@ interface Props {
   target: Point;
 }
 const CameraControls = ({ position, target }: Props) => {
-  const {
-    camera,
-    gl: { domElement },
-  } = useThree();
+  const { camera } = useThree();
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const ref = useRef<any>(null);
 
@@ -56,9 +53,9 @@ const CameraControls = ({ position, target }: Props) => {
   return (
     <OrbitControls
       ref={ref}
-      args={[camera, domElement]}
       panSpeed={1}
       maxPolarAngle={Math.PI / 2}
+      camera={camera}
     />
   );
 };
