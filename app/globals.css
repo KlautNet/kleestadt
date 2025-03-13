@@ -4,20 +4,11 @@
 
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #0a0a0a;
+  --foreground: #ededed;
   --foreground-dimmed: #878787;
   --background-secondary: #0a0a0a;
   --border: #1f1f1f;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-    --foreground-dimmed: #878787;
-    --border: #1f1f1f;
-  }
 }
 
 body {
